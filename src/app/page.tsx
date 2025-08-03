@@ -21,15 +21,15 @@ export default function HomePage() {
             <div className="space-y-8">
               <div className="space-y-6">
                 <Badge className="bg-white/20 text-white border-white/30 px-4 py-2">
-                  Platform Pelatihan Digital Inklusif
+                  Platform Sertifikasi Digital Inklusif
                 </Badge>
                 <h1 className="text-4xl lg:text-5xl font-bold leading-tight">
-                  Pelatihan Digital
+                  Pelatihan Sertifikasi
                   <br />
                   <span className="text-[#B8E6E6]">Kompetensi Inklusif</span>
                 </h1>
                 <p className="text-xl text-blue-100 leading-relaxed">
-                  Sistem pembelajaran terstruktur dan inklusif yang disesuaikan dengan minat, kategori disabilitas, dan
+                  Sistem Sertifikasi dengan metode terstruktur dan inklusif yang disesuaikan dengan minat, kategori disabilitas, dan
                   tujuan karier masing-masing peserta.
                 </p>
               </div>
@@ -56,7 +56,7 @@ export default function HomePage() {
             {/* Right side with features and image */}
             <div className="space-y-6">
               {/* Feature Cards */}
-              <div className="space-y-4">
+              {/* <div className="space-y-4">
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                   <div className="flex items-center space-x-4">
                     <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
@@ -90,7 +90,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               {/* Hero Image */}
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
