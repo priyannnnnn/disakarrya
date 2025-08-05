@@ -139,7 +139,7 @@ export const services = [
     features: ["Business Planning", "Financial Management", "Market Research", "Inclusive Leadership"],
   },
 ]
-
+// src="/images/disabilitas-tuli.jpg"
 export const courses = [
   {
     id: 1,
@@ -148,7 +148,7 @@ export const courses = [
     duration: "8 minggu",
     level: "Pemula",
     price: "Rp 750.000",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/digital_marketing.png?height=200&width=300",
     instructor: "Dian Ayu Rahayu",
     rating: 4.8,
     students: 245,
@@ -161,7 +161,7 @@ export const courses = [
     duration: "12 minggu",
     level: "Menengah",
     price: "Rp 1.200.000",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/web.jpeg?height=200&width=300",
     instructor: "Ahmad Rizki Pratama",
     rating: 4.9,
     students: 189,
@@ -187,7 +187,7 @@ export const courses = [
     duration: "10 minggu",
     level: "Pemula",
     price: "Rp 900.000",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/grafis_digital.png?height=200&width=300",
     instructor: "Dian Ayu Rahayu",
     rating: 4.8,
     students: 156,
@@ -200,7 +200,7 @@ export const courses = [
     duration: "8 minggu",
     level: "Menengah",
     price: "Rp 850.000",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "/images/visialization.png?height=200&width=300",
     instructor: "Ahmad Rizki Pratama",
     rating: 4.6,
     students: 98,

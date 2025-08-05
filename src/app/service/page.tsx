@@ -46,13 +46,13 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-[#4597A7] to-[#5ba3b3] text-white">
+      <section className="py-20 bg-[#4597a7] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Badge className="bg-white/20 text-white border-white/30 px-4 py-2 mb-6">LAYANAN PELATIHAN</Badge>
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-            Program Pelatihan <span className="text-[#B8E6E6]">Unggulan</span>
+            Program Pelatihan <span className="text-white/90">Unggulan</span>
           </h1>
-          <p className="text-xl text-blue-100 leading-relaxed">
+          <p className="text-xl text-white/80 leading-relaxed">
             Berbagai program pelatihan yang dirancang khusus untuk mengembangkan kompetensi digital penyandang
             disabilitas dengan pendekatan yang personal dan inklusif.
           </p>
@@ -66,22 +66,22 @@ export default function ServicesPage() {
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 border-0 shadow-md">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 bg-[#4597A7]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#4597A7] transition-colors">
-                    <service.icon className="h-8 w-8 text-[#4597A7] group-hover:text-white transition-colors" />
+                  <div className="w-16 h-16 bg-[#4597a7]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#4597a7] transition-colors">
+                    <service.icon className="h-8 w-8 text-[#4597a7] group-hover:text-white transition-colors" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
                   <div className="space-y-2 mb-6">
                     {service.features.map((feature, idx) => (
                       <div key={idx} className="flex items-center text-sm text-gray-600">
-                        <CheckCircle className="h-4 w-4 text-[#4597A7] mr-2 flex-shrink-0" />
+                        <CheckCircle className="h-4 w-4 text-[#4597a7] mr-2 flex-shrink-0" />
                         {feature}
                       </div>
                     ))}
                   </div>
                   <Button
                     variant="outline"
-                    className="w-full border-[#4597A7] text-[#4597A7] hover:bg-[#4597A7] hover:text-white bg-transparent"
+                    className="w-full border-[#4597a7] text-[#4597a7] hover:bg-[#4597a7] hover:text-white bg-transparent"
                   >
                     Mulai Belajar
                   </Button>
@@ -97,7 +97,7 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-              Layanan <span className="text-[#4597A7]">Tambahan</span>
+              Layanan <span className="text-[#4597a7]">Tambahan</span>
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               Dukungan komprehensif untuk memastikan kesuksesan pembelajaran dan karier Anda
@@ -105,8 +105,8 @@ export default function ServicesPage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#4597A7]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <CheckCircle className="h-8 w-8 text-[#4597A7]" />
+              <div className="w-16 h-16 bg-[#4597a7]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="h-8 w-8 text-[#4597a7]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Konsultasi Karier</h3>
               <p className="text-gray-600">
@@ -114,8 +114,8 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#4597A7]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Building2 className="h-8 w-8 text-[#4597A7]" />
+              <div className="w-16 h-16 bg-[#4597a7]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Building2 className="h-8 w-8 text-[#4597a7]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Job Placement</h3>
               <p className="text-gray-600">
@@ -123,8 +123,8 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#4597A7]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MessageCircle className="h-8 w-8 text-[#4597A7]" />
+              <div className="w-16 h-16 bg-[#4597a7]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <MessageCircle className="h-8 w-8 text-[#4597a7]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Mentoring 1-on-1</h3>
               <p className="text-gray-600">
@@ -132,8 +132,8 @@ export default function ServicesPage() {
               </p>
             </div>
             <div className="text-center">
-              <div className="w-16 h-16 bg-[#4597A7]/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Globe className="h-8 w-8 text-[#4597A7]" />
+              <div className="w-16 h-16 bg-[#4597a7]/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Globe className="h-8 w-8 text-[#4597a7]" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-2">Komunitas Online</h3>
               <p className="text-gray-600">
@@ -145,21 +145,21 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-[#4597A7] to-[#5ba3b3] text-white">
+      <section className="py-20 bg-[#4597a7] text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl lg:text-4xl font-bold mb-6">Siap Mengembangkan Keterampilan Digital Anda?</h2>
-          <p className="text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-xl text-white/80 mb-8 leading-relaxed">
             Pilih program pelatihan yang sesuai dengan kebutuhan dan tujuan karier Anda. Tim kami siap membantu Anda
             menemukan jalur pembelajaran yang tepat.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="bg-white text-[#4597A7] hover:bg-gray-100">
+            <Button size="lg" className="bg-white text-[#4597a7] hover:bg-gray-100">
               Konsultasi Gratis
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-[#4597A7] bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-[#4597a7] bg-transparent"
             >
               Lihat Semua Kursus
             </Button>
