@@ -2,8 +2,8 @@
 
 import * as React from "react"
 
-// Simple cn function if you don't have one
-function cn(...classes: (string | undefined)[]) {
+// Updated cn function to handle boolean values properly
+function cn(...classes: (string | boolean | undefined | null)[]) {
   return classes.filter(Boolean).join(' ')
 }
 

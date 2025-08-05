@@ -7,7 +7,15 @@ import { MapPin, Calendar, Clock, ChevronLeft, Search, Filter, CheckCircle, Phon
 import Image from "next/image"
 import Link from "next/link"
 
-export default function OfflineCoursesPage({ params }: { params: { locationId: string } }) {
+// Updated interface for Next.js 15
+interface PageProps {
+  params: Promise<{ locationId: string }>
+}
+
+export default async function OfflineCoursesPage({ params }: PageProps) {
+  // Await the params promise in Next.js 15
+  const resolvedParams = await params
+  
   // Mock data based on locationId
   const locationData = {
     "1": {
@@ -40,7 +48,7 @@ export default function OfflineCoursesPage({ params }: { params: { locationId: s
     },
   }
 
-  const location = locationData[params.locationId as keyof typeof locationData]
+  const location = locationData[resolvedParams.locationId as keyof typeof locationData]
 
   const offlineCourses = [
     // 🧠 Disabilitas Intelektual

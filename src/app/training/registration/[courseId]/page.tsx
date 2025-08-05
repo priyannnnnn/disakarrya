@@ -23,10 +23,17 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 
-export default function RegistrationPage({ params }: { params: { courseId: string } }) {
-  // Mock course data - in real app, fetch based on courseId
+// Updated interface for Next.js 15
+interface PageProps {
+  params: Promise<{ courseId: string }>
+}
+
+export default async function RegistrationPage({ params }: PageProps) {
+  // Await the params promise in Next.js 15
+  const resolvedParams = await params
+  
   const course = {
-    id: 1,
+    id: resolvedParams.courseId,
     title: "Dasar Microsoft Office (Word, Excel, PowerPoint)",
     category: "Intelektual",
     level: "Dasar",
@@ -187,7 +194,7 @@ export default function RegistrationPage({ params }: { params: { courseId: strin
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Badge className="bg-white/20 text-white border-white/30 px-4 py-2 mb-4">🟦 STEP 4: PENDAFTARAN COURSE</Badge>
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">
-            Daftar Course <span className="text-white/90">"{course.title}"</span>
+            Daftar Course <span className="text-white/90">{course.title}</span>
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
             Lengkapi data diri dan informasi disabilitas untuk mendapatkan akomodasi pembelajaran yang sesuai

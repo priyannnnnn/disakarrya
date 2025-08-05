@@ -22,10 +22,17 @@ import {
 import Image from "next/image"
 import Link from "next/link"
 
-export default function CourseDetailPage({ params }: { params: { id: string } }) {
-  // Mock data - in real app, fetch based on params.id
+export default async function CourseDetailPage({ 
+  params 
+}: { 
+  params: Promise<{ id: string }> 
+}) {
+  // Await the params promise
+  const { id } = await params
+  const courseId = id // Now params is used
+
   const course = {
-    id: 1,
+    id: parseInt(courseId) || 1,
     title: "Dasar Desain Grafis dengan Canva",
     category: "Desain",
     level: "Dasar",
