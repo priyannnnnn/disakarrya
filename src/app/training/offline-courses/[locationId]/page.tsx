@@ -444,7 +444,7 @@ export default async function OfflineCoursesPage({ params }: PageProps) {
                             Detail
                           </Button>
                         </Link>
-                        <Link href={`/training/course-detail/${course.id}`}>
+                        <Link href={`/training/detail/3}`}>
                           <Button size="sm" className="bg-[#4597a7] hover:bg-[#4597a7]/90">
                             <Calendar className="h-4 w-4 mr-1" />
                             Pilih

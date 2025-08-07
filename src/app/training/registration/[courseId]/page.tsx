@@ -32,22 +32,29 @@ export default async function RegistrationPage({ params }: PageProps) {
   // Await the params promise in Next.js 15
   const resolvedParams = await params
   
+ 
   const course = {
     id: resolvedParams.courseId,
-    title: "Dasar Microsoft Office (Word, Excel, PowerPoint)",
-    category: "Intelektual",
+    title: "Desain Grafis Dasar (Canva & Figma)",
+    category: "Rungu",
     level: "Dasar",
-    duration: "8 minggu",
-    price: "Rp 650.000",
-    mentor: "Ahmad Rizki Pratama, S.Kom.",
-    image: "/placeholder.svg?height=200&width=300&text=MS+Office",
-    targetDisability: "🧠 Disabilitas Intelektual",
-    mode: "Online", // or "Offline"
-    schedule: "Senin-Rabu, 09:00-12:00",
-    startDate: "15 Februari 2025",
-    location: "Online Platform", // or specific location for offline
-    rating: 4.8,
-    students: 189,
+    duration: "6 minggu",
+    schedule: "Selasa-Kamis, 09:00-12:00",
+    quota: "7/10",
+    price: "Rp 750.000",
+    mentor: "Dian Ayu Rahayu, S.Sn.",
+    image: "/images/grafis.png?height=200&width=300&text=Design+Workshop",
+    startDate: "18 Februari 2025",
+    endDate: "1 April 2025",
+    targetDisability: "👂 Disabilitas Rungu",
+    learningGoal: "Mengembangkan kreativitas visual",
+    output: "Poster, feed Instagram, branding sederhana",
+    facilities: ["Interpreter bahasa isyarat", "Visual display", "Design software", "Printing facility"],
+    rating: 4.9,
+    // Adding missing properties from original for compatibility
+    mode: "Online", // You can change this if needed
+    location: "Online Platform", // You can change this if needed
+    students: 7, // Based on quota "7/10"
   }
 
   const disabilityTypes = [

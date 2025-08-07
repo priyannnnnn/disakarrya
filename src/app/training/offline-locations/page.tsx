@@ -14,7 +14,7 @@ export default function OfflineLocationsPage() {
       address: "Jl. Kaliurang KM 9, Sleman, Yogyakarta 55581",
       phone: "+62 274 555 0123",
       email: "blk.yogya@disakarya.com",
-      image: "/placeholder.svg?height=200&width=300&text=BLK+Yogyakarta",
+      image: "/images/yakum_jogja.jpeg?height=200&width=300&text=BLK+Yogyakarta",
       facilities: ["Ramp aksesibel", "Lift", "Toilet disabilitas", "Parking khusus", "Audio system"],
       courses: [
         { title: "Desain Grafis dengan Canva", schedule: "Senin-Rabu, 09:00-12:00", quota: "12/15" },
@@ -31,7 +31,7 @@ export default function OfflineLocationsPage() {
       address: "Jl. Sudirman No. 88, Jakarta Pusat 10220",
       phone: "+62 21 555 0456",
       email: "jakarta@disakarya.com",
-      image: "/placeholder.svg?height=200&width=300&text=Jakarta+Center",
+      image: "/images/tuna-jakarta.jpeg?height=200&width=300&text=Jakarta+Center",
       facilities: ["Screen reader support", "Braille printer", "Audio guidance", "Tactile pathways", "Guide dog area"],
       courses: [
         { title: "Excel Advanced untuk Tunanetra", schedule: "Senin-Rabu, 10:00-13:00", quota: "6/8" },
@@ -48,7 +48,7 @@ export default function OfflineLocationsPage() {
       address: "Jl. Asia Afrika No. 21, Bandung 40111",
       phone: "+62 22 555 0789",
       email: "bandung@disakarya.com",
-      image: "/placeholder.svg?height=200&width=300&text=Bandung+Center",
+      image: "/images/bandung.jpg?height=200&width=300&text=Bandung+Center",
       facilities: [
         "Interpreter bahasa isyarat",
         "Visual aids",
@@ -264,7 +264,7 @@ export default function OfflineLocationsPage() {
                             <Button variant="outline" className="flex-1 border-[#4597a7] text-[#4597a7] bg-transparent">
                               <MapPin className="h-4 w-4 mr-2" />📍 Lihat Lokasi
                             </Button>
-                            <Link href={`/training/offline-courses/${location.id}`} className="flex-1">
+                            <Link href={`/training/detail/3`} className="flex-1">
                               <Button className="w-full bg-[#4597a7] hover:bg-[#4597a7]/90">
                                 <Calendar className="h-4 w-4 mr-2" />
                                 Lihat Course

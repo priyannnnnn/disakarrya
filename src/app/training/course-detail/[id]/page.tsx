@@ -41,7 +41,7 @@ export default async function CourseDetailPage({
     rating: 4.8,
     reviews: 89,
     price: "Rp 750.000",
-    image: "/placeholder.svg?height=300&width=500&text=Canva+Design+Course",
+    image: "/images/grafis.png?height=300&width=500&text=Canva+Design+Course",
     description:
       "Pelajari dasar-dasar desain grafis menggunakan Canva dengan pendekatan yang ramah untuk semua jenis disabilitas. Course ini dirancang khusus untuk memberikan pemahaman mendalam tentang prinsip-prinsip desain yang dapat diaplikasikan dalam berbagai kebutuhan visual.",
     accessibility: [

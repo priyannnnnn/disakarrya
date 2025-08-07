@@ -460,7 +460,7 @@ export default function OnlineCoursesPage() {
               <Card key={course.id} className="group hover:shadow-xl transition-all duration-300 overflow-hidden">
                 <div className="relative">
                   <Image
-                    src={course.image || "/placeholder.svg"}
+                    src={course.image || "/images/com.png"}
                     alt={course.title}
                     width={300}
                     height={200}
@@ -544,7 +544,7 @@ export default function OnlineCoursesPage() {
                             Detail
                           </Button>
                         </Link>
-                        <Link href={`/training/course-detail/${course.id}`}>
+                        <Link href={`/training/detail/3`}>
                           <Button size="sm" className="bg-[#4597a7] hover:bg-[#4597a7]/90">
                             <Play className="h-4 w-4 mr-1" />
                             Pilih
