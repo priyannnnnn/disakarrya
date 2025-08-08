@@ -7,8 +7,10 @@ import { ChevronLeft, ArrowRight, Star, Users, Clock, Award, CheckCircle, Play, 
 import Image from "next/image"
 import Link from "next/link"
 
-export default function TrainingDetailPage({ params }: { params: { id: string } }) {
-  // Mock data - in real app, fetch based on params.id
+export default async function TrainingDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  // Await the params since it's now a Promise
+  const { id } = await params;
+
   const training = {
     id: 1,
     title: "Desain Grafis dengan Adobe Creative Suite",

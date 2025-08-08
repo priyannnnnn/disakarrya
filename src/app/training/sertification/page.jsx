@@ -46,11 +46,11 @@ export default function CertificationSection() {
             {/* Added Image Section */}
             <div className="mb-6 rounded-lg overflow-hidden shadow-md">
               <Image
-                src="/images/sertifi.png?height=300&width=800&text=BNSP+Certification+Process"
+                src="/images/sertificatt.png?height=300&width=800&text=BNSP+Certification+Process"
                 alt="Proses Sertifikasi BNSP - Badan Nasional Sertifikasi Profesi"
                 width={400}
                 height={300}
-                className="w-full h-80 object-cover"
+                className="w-full h-160 object-cover"
               />
               <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white p-4">
                 <div className="flex items-center justify-between">
